@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Hello Thymeleaf</title>
+<link rel="stylesheet" href="/css/style.css">
+<script type="text/javascript" src="/js/common.js"></script>
+</head>
+<body>
+	<h1>Hello Thymeleaf</h1>
+
+	<dl>
+		<dt>id</dt>
+		<dd th:text="${id}"></dd>
+		<dt>name</dt>
+		<dd th:text="${name}"></dd>
+	</dl>
+	<dl>
+		<dt>id</dt>
+		<dd th:text="${mapData.id}"></dd>
+		<dt>name</dt>
+		<dd th:text="${mapData.name}"></dd>
+	</dl>
+
+</body>
+</html>
